@@ -1,0 +1,44 @@
+body {
+  background-color: #272727;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.cmd-prompt::before {
+  content: "lucasbraganca@home:~$ ";
+  color: #4AF626;
+}
+
+.cmd-prompt {
+  color: white;
+  font-size: 1.2em;
+}
+
+.cmd-output {
+  color: white;
+  font-size: 1.2em;
+}
+
+.cmd-output--list {
+    display: grid;
+    list-style-type: none;
+  }
+
+@media screen and (max-width: 700px) {
+  .cmd-output--list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .cmd-output--list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cmd-output--list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
