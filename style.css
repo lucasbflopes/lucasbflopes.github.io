@@ -68,10 +68,10 @@ a, a:visited, a:link {
 
 @-webkit-keyframes blink {
   from {
-    opacity: 100%;
+    -webkit-opacity: 100%;
   }
 
   to {
-    opacity: 0%;
+    -webkit-opacity: 0%;
   }
 }
