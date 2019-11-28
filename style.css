@@ -3,8 +3,12 @@ body {
   font-family: 'Source Code Pro', monospace;
 }
 
+a:visited {
+  color: white;
+}
+
 .cmd-prompt::before {
-  content: "lucasbraganca@home:~$ ";
+  content: "lucasbraganca@your-browser:~$ ";
   color: #4AF626;
 }
 
@@ -19,9 +23,15 @@ body {
 }
 
 .cmd-output--list {
-    display: grid;
-    list-style-type: none;
-  }
+  display: grid;
+  list-style-type: none;
+}
+
+.cmd-prompt-input {
+  width: 1.2em;
+  background: white;
+  animation: blink 1s ease-in-out infinite;
+}
 
 @media screen and (max-width: 700px) {
   .cmd-output--list {
@@ -38,6 +48,16 @@ body {
 @media screen and (min-width: 1000px) {
   .cmd-output--list {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 0%;
   }
 }
 
