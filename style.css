@@ -19,7 +19,9 @@ a:visited {
 
 .cmd-output {
   color: white;
+  padding-left: 0;
   font-size: 1.2em;
+  list-style-type: none;
 }
 
 .cmd-output--list {
