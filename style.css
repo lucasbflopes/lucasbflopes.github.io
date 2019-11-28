@@ -34,6 +34,7 @@ a, a:visited, a:link {
 
 .cmd-prompt-input {
   background: white;
+  display: inline-block;
   animation: blink 1s ease-in-out infinite;
   -webkit-animation: blink 1s ease-in-out infinite;
 }
