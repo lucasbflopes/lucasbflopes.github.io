@@ -57,21 +57,11 @@ a, a:visited, a:link {
 }
 
 @keyframes blink {
-  from {
-    opacity: 100%;
-  }
-
-  to {
-    opacity: 0%;
-  }
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 @-webkit-keyframes blink {
-  from {
-    -webkit-opacity: 100%;
-  }
-
-  to {
-    -webkit-opacity: 0%;
-  }
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }
