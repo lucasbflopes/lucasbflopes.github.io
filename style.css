@@ -4,7 +4,7 @@
 
 body {
   background-color: #272727;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Fira Code', monospace;
 }
 
 a, a:visited, a:link {
@@ -41,6 +41,7 @@ a, a:visited, a:link {
 
 @media screen and (max-width: 700px) {
   .cmd-output--list {
+    row-gap: 5px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
