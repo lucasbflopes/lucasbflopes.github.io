@@ -1,28 +1,35 @@
+:root {
+  --prompt-text: "lucasbraganca@your-browser:~$ ";
+  --prompt-text-color: #4AF626;
+  --terminal-text-color: white;
+  --terminal-background-color: #272727;
+  --terminal-font-family: 'Fira Code', monospace;
+}
+
 * {
   font-size: 1em;
 }
 
 body {
-  background-color: #272727;
-  font-family: 'Fira Code', monospace;
+  background-color: var(--terminal-background-color);
+  font-family: var(--terminal-font-family);
 }
 
 a, a:visited, a:link {
-  color: white;
+  color: var(--terminal-text-color);
 }
 
 .cmd-prompt::before {
-  content: "lucasbraganca@your-browser:~$ ";
-  color: #4AF626;
+  content: var(--prompt-text);
+  color: var(--prompt-text-color);
 }
 
 .cmd-prompt {
-  color: white;
-  
+  color: var(--terminal-text-color);
 }
 
 .cmd-output {
-  color: white;
+  color: var(--terminal-text-color);
   padding-left: 0;
   list-style-type: none;
 }
@@ -33,7 +40,7 @@ a, a:visited, a:link {
 }
 
 .cmd-prompt-input {
-  background: white;
+  background: var(--terminal-text-color);
   display: inline-block;
   animation: blink 1s ease-in-out infinite;
   -webkit-animation: blink 1s ease-in-out infinite;
